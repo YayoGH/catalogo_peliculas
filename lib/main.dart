@@ -7,6 +7,8 @@ import 'login_screen.dart';
 import 'register_screen.dart';
 import 'catalog_screen.dart';
 
+import 'admin_screen.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -30,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/login': (_) => const LoginScreen(),
         '/register': (_) => const RegisterScreen(),
         '/catalog': (_) => const CatalogScreen(),
+        '/admin': (_) => const AdminScreen(),
       },
     );
   }
